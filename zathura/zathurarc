@@ -1,0 +1,12 @@
+set guioptions ""
+set sandbox none
+set scroll-step 150
+set selection-clipboard clipboard
+
+set recolor
+set recolor-lightcolor \#434C5E
+set default-bg \#434C5E
+set adjust-open "best-fit"
+
+map R rotate
+map r reload
