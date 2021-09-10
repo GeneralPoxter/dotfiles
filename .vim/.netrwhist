@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/poxter/.cache/pypoetry/virtualenvs/qanta-virId68h-py3.9'
+let g:netrw_dirhist_9='/home/poxter/.zsh'
+let g:netrw_dirhist_8='/home/poxter/qb/qanta/bonus'
+let g:netrw_dirhist_7='/home/poxter/qb/qanta'
+let g:netrw_dirhist_6='/home/poxter/qb'
+let g:netrw_dirhist_5='/home/poxter/go/src/github.com/GeneralPoxter/StreetSolver'
+let g:netrw_dirhist_4='/home/poxter/.vim/ftdetect'
+let g:netrw_dirhist_3='/home/poxter/.config/chromium'
+let g:netrw_dirhist_2='/home/poxter/.config/gnome-session'
+let g:netrw_dirhist_1='/home/poxter/.config'
