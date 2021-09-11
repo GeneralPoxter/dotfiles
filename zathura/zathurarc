@@ -14,5 +14,5 @@ set statusbar-fg \#88C0D0
 
 map R rotate
 map r reload
-map s toggle_statusbar
+map S toggle_statusbar
 map t toggle_page_mode
