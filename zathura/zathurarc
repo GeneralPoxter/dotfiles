@@ -1,12 +1,18 @@
 set guioptions ""
 set sandbox none
 set scroll-step 150
+set adjust-open "width"
 set selection-clipboard clipboard
 
 set recolor
 set recolor-lightcolor \#434C5E
 set default-bg \#434C5E
-set adjust-open "best-fit"
+set inputbar-bg \#353C4A
+set inputbar-fg \#DDDDDD
+set statusbar-bg \#353C4A
+set statusbar-fg \#88C0D0
 
 map R rotate
 map r reload
+map s toggle_statusbar
+map t toggle_page_mode
