@@ -8,4 +8,5 @@
 * Pop Shell ([repo](https://github.com/pop-os/shell))
 * Vitals ([repo](https://github.com/corecoding/Vitals))
 * Zafiro icons ([repo](https://github.com/zayronxio/Zafiro-icons))
+* Nordzy cursors ([repo](https://github.com/alvatip/Nordzy-cursors))
 * Oh My Zsh ([repo](https://github.com/ohmyzsh/ohmyzsh))
