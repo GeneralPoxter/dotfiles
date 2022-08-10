@@ -5,6 +5,9 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+" 2 space tabs
+autocmd Filetype ocaml setlocal ts=2 sw=2 sts=2
+
 " Set cursor modes
 let &t_SI = "\e[6 q"
 let &t_SR = "\e[4 q"
@@ -27,7 +30,7 @@ set smartindent
 
 " Search highlighting
 set hls is
-nnoremap \<CR> :let @/ = ""<CR>:<Del>
+nnoremap <Leader><CR> :let @/ = ""<CR>:<Del>
 set nowrapscan
 
 " Commands to run current file as a language
@@ -39,6 +42,7 @@ command -nargs=* Hask w | !exechask % <args>
 command -nargs=* Haski w | !ghci % <args>
 command -nargs=* Stk w | !stack --silent ghci % <args>
 command -nargs=* Go w | !go run % <args>
+command -nargs=* Ocaml w | !ocaml % <args>
 command -nargs=* Node w | !node % <args>
 command -nargs=* Nodei w | !nodei % <args>
 command -nargs=* Py w | !python3 % <args>
@@ -48,6 +52,7 @@ command -nargs=* Py2i w | !python2 -i % <args>
 command -nargs=* Bash w | !bash % <args>
 command -nargs=* Sh w | !Sh % <args>
 command -nargs=* Exec w | !./% <args>
+command -nargs=* Make w | !make
 
 " Quality of life
 set mouse-=a
@@ -60,6 +65,11 @@ autocmd VimLeave * call system("xclip -selection clipboard -i", getreg('+'))
 " Clipboard
 vnoremap <C-c> "+y
 map <C-p> "+p
+
+" Switching buffers
+nnoremap <C-j> :w<CR>:bp<CR>
+nnoremap <C-k> :w<CR>:bn<CR>
+nnoremap <Leader>b :ls<CR>:b<Space>
 
 " Encoding
 set encoding=utf-8
@@ -85,6 +95,7 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'stevearc/vim-arduino'
+Plug 'udalov/kotlin-vim'
 call plug#end()
 
 " Theme

@@ -100,20 +100,21 @@ export VISUAL=/usr/bin/vim
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias odi="objdump -M intel -d"
 alias pacman="sudo pacman"
 alias preview-lilypond="lilypond -fpng -dresolution=500 -dpreview"
 alias rebuild-poxter="sh /usr/local/bin/rebuild-poxter.sh"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias update-initramfs="sudo mkinitcpio -p linux"
 alias update-mirrors="sudo reflector --verbose --age 12 --protocol https --country 'United States' --sort rate --save /etc/pacman.d/mirrorlist"
-alias update-hw="vim $HOME/school/homework.txt"
 
 # Paths
 path+=("$HOME/.local/bin")
 path+=("$HOME/go/bin")
-export PYTHONPATH="$HOME/qb"
-export QB_ROOT="$HOME/qb"
 
 # Initialize pure prompt
 autoload -U promptinit; promptinit
 prompt pure
+
+# opam configuration
+[[ ! -r /home/poxter/.opam/opam-init/init.zsh ]] || source /home/poxter/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
